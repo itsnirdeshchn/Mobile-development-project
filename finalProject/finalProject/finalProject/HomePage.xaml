@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="finalProject.HomePage"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <!-- Header Frame -->
+
+                <Frame BackgroundColor="Gold" Padding="10">
+                    <Grid HorizontalOptions="FillAndExpand">
+                        <!-- Align labels horizontally using Grid -->
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+                        <Label Text="Recipe" 
+                               FontSize="Medium" 
+                               TextColor="White" 
+                               FontAttributes="Bold" 
+                               Grid.Column="0"/>
+                        <Label Text="Logout" 
+                               Grid.Column="1" 
+                               FontSize="Medium" 
+                               TextColor="White" >
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="OnTappedHandler"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Grid>
+                </Frame>
+
+                <!-- Repeated Frames -->
+                <!-- First Frame -->
+                <StackLayout TabIndex="-1">
+                    <Frame CornerRadius="20" Margin="10,0,10,10" >
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnFrameTapped" CommandParameter="1"/>
+                        </Frame.GestureRecognizers>
+                        <StackLayout>
+                            <Image Source="https://pastrieslikeapro.com/wp-content/uploads/2022/01/classic-birthday-cake.jpg"/>
+                            <Grid>
+                                <!-- Heading and Subheading -->
+                                <StackLayout>
+                                    <Label Text="Cake" FontAttributes="Bold"/>
+                                    <Label Text="Chocolete Cake"/>
+                                </StackLayout>
+                                <!-- Bookmark Label -->
+                                <Label Text="Bookmark" HorizontalOptions="End" VerticalOptions="Center"/>
+                            </Grid>
+                        </StackLayout>
+                    </Frame>
+
+                    <!-- Second Frame -->
+                    <Frame CornerRadius="20" Margin="10,0,10,10">
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnFrameTapped" CommandParameter="2"/>
+                        </Frame.GestureRecognizers>
+                        <StackLayout>
+                            <Image Source="https://food.fnr.sndimg.com/content/dam/images/food/fullset/2018/1/10/0/DV2802_Nepali-Momo_s4x3.jpg.rend.hgtvcom.1280.960.suffix/1515644556794.webp"/>
+                            <Grid>
+                                <!-- Heading and Subheading -->
+                                <StackLayout>
+                                    <Label Text="Momo" FontAttributes="Bold"/>
+                                    <Label Text="Chicken/Buff/Veg"/>
+                                </StackLayout>
+                                <!-- Bookmark Label -->
+                                <Label Text="Bookmark" HorizontalOptions="End" VerticalOptions="Center"/>
+                            </Grid>
+                        </StackLayout>
+                    </Frame>
+
+                    <!-- Third Frame -->
+                    <Frame CornerRadius="20" Margin="10,0,10,10">
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnFrameTapped" CommandParameter="3"/>
+                        </Frame.GestureRecognizers>
+                        <StackLayout>
+                            <BoxView BackgroundColor="Azure" HeightRequest="200" CornerRadius="12"/>
+                            <Grid>
+                                <!-- Heading and Subheading -->
+                                <StackLayout>
+                                    <Label Text="Heading3" FontAttributes="Bold"/>
+                                    <Label Text="Sub-Heading"/>
+                                </StackLayout>
+                                <!-- Bookmark Label -->
+                                <Label Text="Bookmark" HorizontalOptions="End" VerticalOptions="Center"/>
+                            </Grid>
+                        </StackLayout>
+                    </Frame>
+                </StackLayout>            
+            </StackLayout>
+        </ScrollView>        
+    </ContentPage.Content>
+</ContentPage>

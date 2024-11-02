@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="finalProject.RecipePage">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="10">
+                <Image Source="https://pastrieslikeapro.com/wp-content/uploads/2022/01/classic-birthday-cake-720x598.jpg" 
+              Aspect="AspectFill"/>
+                <Label Text="Cake" 
+                       FontSize="Large"/>
+                <Label Text="Unsalted Butter is called for and and I prefer regular American butter when making laminated doughs.
+                       This butter stays harder than the higher fat European butter which softens much faster when rolling out.
+                       Bread Flour is used for its stregnth and crispness. All things being equal, I find it rises higher than all-purpose flour and produces a crisper, flakier pastry.
+                       Salt enhances the taste of the baked pastry.
+                       Sour cream sometimes has liquid in it. Make sure to pour that off and only use the firm part." />
+            </StackLayout>
+        </ScrollView>     
+    </ContentPage.Content>
+</ContentPage>
